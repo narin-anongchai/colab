@@ -1,0 +1,12 @@
+# prompt: โค้ดรับค่าข้อมูลตัวเลข เพื่อหาค่าเลขฐาน2
+
+def decimal_to_binary(n):
+  """แปลงเลขฐาน 10 เป็นเลขฐาน 2"""
+  return bin(n)[2:]
+
+# รับค่าข้อมูลตัวเลขจากผู้ใช้
+decimal_number = int(input("ป้อนเลขฐาน 10: "))
+
+# แปลงเป็นเลขฐาน 2 และแสดงผลลัพธ์
+binary_number = decimal_to_binary(decimal_number)
+print("เลขฐาน 2: ", binary_number)
